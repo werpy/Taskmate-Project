@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskmate | Notes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/img/icons/logo.png">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="/css/notes_page.css">
+</head>
+
+<body>
+    <section class="notes_section">
+        <aside class="notes_aside_nav">
+            <div class="notes_aside_content">
+                <img onclick="window.location.href='/index.html'" class="notes_logo" src="/img/icons/logo.png"
+                    alt="logo">
+                <span onclick="window.location.href='/index.html'" class="notes_logo_text">taskmate</span>
+            </div>
+            <div class="notes_nav_menu">
+                <a href="/home_page.html" class="notes_nav__menu"><box-icon class="notes_nav_icon"
+                        name='home'></box-icon><span>Home</span></a>
+                <a href="/contacts_page.html" class="notes_nav__menu"><box-icon class="notes_nav_icon" type='solid'
+                        name='contact'></box-icon><span>Contacts</span></a>
+                <a href="/notes_page.html" class="notes_nav__menu" id="focus_link"><box-icon class="notes_nav_icon"
+                        name='notepad'></box-icon><span>Notes</span></a>
+                <a href="/files_page.html" class="notes_nav__menu"><box-icon class="notes_nav_icon" name='file-blank'
+                        color='#000'></box-icon><span>Files</span></a>
+            </div>
+            <button class="notes_btn_aside" id="collapse_btn">
+                <span class="notes_btn_text">Collapse</span>
+                <box-icon class="notes_arrow_back" name='arrow-back'></box-icon>
+            </button>
+        </aside>
+
+        <aside class="notes_header_nav">
+            <header class="notes_header">
+                <div class="notes_nav_header">
+                    <box-icon onclick="window.location.href='/contacts_page.html'" class="notes_nav_arrow"  name='chevron-left' color='#000'></box-icon>
+                    <box-icon onclick="window.location.href='/files_page.html'" class="notes_nav_arrow" name='chevron-right' color='#000'></box-icon>
+                    <h3 class="notes_page_name">Notes</h3>
+                </div>
+                <div class="notes_search">
+                    <box-icon class="notes_search_icon" name='search' color='#494949'></box-icon>
+                    <input class="notes_search_bar" type="search" placeholder="Search on Taskmate">
+                </div>
+                <div class="notes_fast_nav">
+                    <box-icon onclick="window.location.href='#'" class="notes_nav__icon" name='moon' color='#000'></box-icon>
+                    <div class="notes_bell_block">
+                        <box-icon onclick="window.location.href='/notification_page.html'" class="notes_nav__icon" name='bell' color='#000'></box-icon>
+                        <div class="notes_red_point"></div>
+                    </div>
+                    <box-icon onclick="window.location.href='/cabinet_page.html'" class="notes_nav__icon" id="notes_user_circle" name='user-circle' type='solid' color='#7148fc'></box-icon>
+                </div>
+            </header>
+            <section class="notes_content">
+                <div class="notes_paragraph_block">
+                    <h1 class="notes_paragraph">Your Notes 📒</h1>
+                    <div class="note_container">
+                        <input type="text" class="note_title" placeholder="Type headline...">
+                        <textarea class="note_content" placeholder="Type note..."></textarea>
+                        <input type="text" class="note_tag" placeholder="CREATE TAG...">
+                    </div>
+
+                    <div class="add_note_btnunderline"></div>
+
+                    <div class="add_note_container">
+                        <button class="add_note_btn"> Add new note <box-icon name='plus'></box-icon></button>
+                    </div>
+                </div>
+
+                <div class="notes_aside_line"></div>
+
+                <aside class="notes_aside_bar">
+                    <section class="notes_aside_section">
+                        <div class="notes_aside_block">
+                            <h2 class="notes_aside_text">Full list</h2>
+                            <div class="notes_search_filter">
+                                <span class="filter_icon_span">
+                                    <box-icon name='filter-alt' class="filter_icon"></box-icon>
+                                </span>
+                                <select>
+                                    <option class="notes_filter_option" value="all">All</option>
+                                    <option class="notes_filter_option" value="name">By Name</option>
+                                    <option class="notes_filter_option" value="date">Today</option>
+                                    <option class="notes_filter_option" value="priority">By week</option>
+                                    <option class="notes_filter_option" value="priority">By Date</option>
+                                </select>
+                            </div>
+                        </div>
+                        <box-icon class="notes_mainsearch_icon" name='search' color='#494949'></box-icon>
+                        <div class="filter_search_bar">
+                            <input class="notes_content_search" type="search" placeholder="Search notes">
+                        </div>
+                        <div class="notes_blocks_container">
+
+                            <span class="notes_date_span">Today</span>
+
+                            <div class="notes_block">
+                                <div class="notes_maintext_container">
+                                    <h3 class="notes_block_maintext">Holiday Shopping List</h3>
+                                </div>
+                                <div class="notes_subtitle_container">
+                                    <p class="notes_block_subtitle">Don't forget to grab decorations for the party, especially some string li...</p>
+                                    <box-icon class="notes_follow_arrow" name='right-arrow-alt' onclick="window.location.href='#'"></box-icon>
+                                </div>
+                            </div>
+                            <div class="notes_block">
+                                <div class="notes_maintext_container">
+                                    <h3 class="notes_block_maintext">Weekend To-Do List</h3>
+                                    <span class="notes_tag_container" onclick="window.location.href='#'">List</span>
+                                </div>
+                                <div class="notes_subtitle_container">
+                                    <p class="notes_block_subtitle">Start the morning with a quick workout, then clean the apartment...</p>
+                                    <box-icon class="notes_follow_arrow" name='right-arrow-alt' onclick="window.location.href='#'"></box-icon>
+                                </div>
+                            </div>
+
+                            <span class="notes_date_span">Previous 7 days</span>
+
+                            <div class="notes_block">
+                                <div class="notes_maintext_container">
+                                    <h3 class="notes_block_maintext">Travel Essentials</h3>
+                                    <span class="notes_tag_container" onclick="window.location.href='#'">Travel</span>
+                                </div>
+                                <div class="notes_subtitle_container">
+                                    <p class="notes_block_subtitle">Pack comfortable shoes and weather-appropriate clothes for th...</p>
+                                    <box-icon class="notes_follow_arrow" name='right-arrow-alt' onclick="window.location.href='#'"></box-icon>
+                                </div>
+                            </div>
+                            <div class="notes_block">
+                                <div class="notes_maintext_container">
+                                    <h3 class="notes_block_maintext">Meal Prep for the Week</h3>
+                                    <span class="notes_tag_container" onclick="window.location.href='#'">Meal</span>
+                                </div>
+                                <div class="notes_subtitle_container">
+                                    <p class="notes_block_subtitle">Start by planning out the meals for breakfast, lunch, and dinner, focusi...</p>
+                                    <box-icon class="notes_follow_arrow" name='right-arrow-alt' onclick="window.location.href='#'"></box-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </aside>
+
+            </section>
+        </aside>
+    </section>
+
+
+    <!-- js file link -->
+    <script src="/js/notes_page.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.header_content {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    padding: 0 0 0 40px;
+}
+
+.logo_text {
+    margin-left: 12px;
+    font-size: 22px;
+    text-decoration: none;
+    color: #202C39;
+    font-weight: 600;
+}
+
+.log_in {
+    width: 100%;
+    height: 90vh;
+    padding-top: 9vh;
+}
+
+.log {
+    display: flex;
+    margin: 0 auto;
+    background-color: #fff;
+    max-width: 380px;
+    height: 432px;
+    border: 2px solid #bcc0c4;
+    border-radius: 24px;
+    flex-wrap: wrap;
+}
+
+.log_in_content {
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.login_main_text {
+    color: #202C39;
+}
+
+.login_main_subtile {
+    color: #656d76;
+    font-size: 14px;
+}
+
+.sign_in_span {
+    color: #7148fc;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login_inputs {
+    margin: -30px auto;
+}
+
+.username_main_text {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+    padding-bottom: 5px;
+}
+
+.username_input {
+    padding-left: 20px;
+    min-width: 300px;
+    height: 48px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f5f7Fa;
+}
+
+.password_toggle_icon {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    margin-top: -35px;
+    z-index: 999999;
+    cursor: pointer;
+}
+
+.password_toggle_icon i {
+    font-size: 20px;
+}
+
+.btn_login {
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 100%;
+    height: 48px;
+    border-radius: 10px;
+    background-color: #7148fc;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn_login:hover {
+    background-color: #496583;
+    transition-property: all;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+}
+
+.policy {
+    margin-top: -10px;
+    font-size: 13px;
+    text-align: center;
+    color: #656d76;
+}
+
+.link_policy {
+    color: #656d76;
+    text-decoration: underline;
+}

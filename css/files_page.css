@@ -1,0 +1,595 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.files_section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.files_aside_nav {
+    max-width: 270px;
+    padding: 15px;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    transition: all 1s ease;
+}
+
+.files_aside_content {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /* padding: 5px 20px 20px 20px; */
+}
+
+.files_logo {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.files_logo_text {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #202c39;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.files_nav_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 120px;
+    margin: 20vh auto;
+    height: 250px;
+
+}
+
+.files_nav__menu {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #7a7a7a;
+    font-weight: 500;
+
+}
+
+.files_nav__menu:hover {
+    color: #202c39;
+}
+
+#focus_link:focus {
+    outline: none;
+}
+
+.files_nav_icon {
+    margin-right: 15px;
+}
+
+.files_btn_aside {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    width: 190px;
+    height: 40px;
+    border: 2px solid #ababab;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 1s ease;
+}
+
+.files_btn_aside:hover {
+    background-color: #7148fc;
+    transition-duration: 1s;
+    transition-property: all;
+    border: none;
+    color: #fff;
+}
+
+.files_btn_aside:hover .files_arrow_back {
+    fill: #ffffff;
+    transition: 1s;
+}
+
+.files_aside_nav.collapsed {
+    max-width: 60px;
+    padding: 15px 0;
+    transition: all 1s ease;
+}
+
+.files_aside_nav.collapsed .files_nav_menu {
+    width: 100%;
+}
+
+.files_aside_nav.collapsed .files_aside_content .files_logo {
+    margin-right: 10px;
+}
+
+.files_aside_nav.collapsed .files_logo_text,
+.files_aside_nav.collapsed .files_nav__menu span,
+.files_aside_nav.collapsed .files_btn_aside {
+    display: none;
+    transition: all 1s ease;
+}
+
+.files_aside_nav.collapsed .files_nav_icon {
+    margin-right: 0;
+    justify-content: center;
+    display: block;
+    transition: all 1s ease;
+}
+
+.files_aside_nav.collapsed .files_nav__menu {
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+#collapse_btn {
+    display: flex;
+    justify-content: center;
+}
+
+.files_aside_nav.collapsed #collapse_btn {
+    width: 40px;
+    height: 40px;
+    background-color: #7148fc;
+    border: none;
+    color: #202c39;
+}
+
+.files_aside_nav.collapsed .files_btn_aside span {
+    display: none;
+}
+
+.files_aside_nav.collapsed .files_arrow_back {
+    margin: 0 auto;
+    transform: rotate(180deg);
+    transition: all 1s ease;
+    fill: #ffffff;
+}
+
+.files_arrow_back {
+    margin-left: 20px;
+}
+
+.files_header_nav {
+    width: 100%;
+}
+
+.files_header {
+    width: 100%;
+    height: 64px;
+}
+
+.files_nav_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 115px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.files_nav_arrow {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.files_no_clickarrow {
+    cursor: default;
+}
+
+.files_page_name {
+    color: #202c39;
+    font-weight: 500;
+}
+
+.files_search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -32px;
+}
+
+.files_search_icon {
+    position: absolute;
+    margin-right: 250px;
+}
+
+.files_search_bar {
+    width: 300px;
+    height: 40px;
+    padding-left: 44px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
+}
+
+.files_fast_nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    float: right;
+    width: 180px;
+    margin-top: -40px;
+    margin-right: 20px;
+}
+
+.files_nav__icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.files_bell_block {
+    display: flex;
+    justify-content: space-around;
+}
+
+.files_red_point {
+    width: 6px;
+    height: 6px;
+    background-color: #EB4034;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#files_user_circle {
+    width: 45px;
+    height: 45px;
+}
+
+.files_content {
+    max-width: 77%;
+    height: auto;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.files_paragraph_block {
+    width: 100%;
+    height: 54px;
+}
+
+.files_paragraph {
+    font-size: 25px;
+    font-weight: 600;
+    color: #202c39;
+}
+
+.files_search_divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 97%;
+    margin-top: 16px;
+}
+
+.files_search_container {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.files_content_search {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    padding-left: 50px;
+    font-size: 16px;
+}
+
+.files_mainsearch_icon {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.files_search_filter {
+    padding-left: 10px;
+}
+
+.files_search_filter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 19%;
+    height: 50px;
+    border-radius: 8px;
+    padding-top: 3px;
+    padding-right: 20px;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+
+.files_search_filter .files_select {
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    color: #4a4a4a;
+    outline: none;
+}
+
+.files_filter_option {
+    text-align: center;
+}
+
+.filter_icon_span {
+    
+    pointer-events: none;
+    color: #555;
+}
+
+.files_filter_icon {
+    width: 20px;
+    margin-top: 6px;
+}
+
+/* Стиль при наведенні */
+.files_search_filter:hover {
+    border-color: #bbb;
+}
+
+.files_container {
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    margin-top: 20px;
+    height: 650px;
+}
+
+.files_scroll_container {
+    overflow-y: scroll;
+    height: 650px;
+}
+
+.files_scroll_container::-webkit-scrollbar {
+    width: 0;
+}
+
+.files_name_column, .files_content_elements {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.files_name_column {
+    font-weight: 600;
+    border-bottom: 2px solid #cccccc;
+}
+
+.name_column {
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+}
+
+.files_date {
+    color: #7148fc;
+}
+
+.files_content_elements {
+    border-bottom: 2px solid #cccccc;
+    transition: background-color 0.3s ease;
+}
+
+.files_names_container {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.files_names {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.files_names .file_name_header {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.files_names .files_full_name {
+    color: #6a00ff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.files_names .files_full_name:hover {
+    text-decoration: underline;
+}
+
+.files_name_prototype, .files_date_prototype, .files_size_prototype {
+    font-size: 17px;
+    color: #4d4d4d;
+    text-align: left;
+    font-weight: 500;
+}
+
+.files_content_elements:last-child {
+    border-bottom: none;
+}
+
+.files_dots_icon {
+    cursor: pointer;
+}
+
+.files_aside_line {
+    width: 2px;
+    height: 778px;
+    background-color: #cccccc;
+    float: right;
+    margin-top: -27px;
+}
+
+.files_carusel_aside {
+    position: absolute;
+    width: 19%;
+    height: 650px;
+    right: 5px;
+    padding-left: 19px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    margin-top: -22px;
+}
+
+.files_main_text_scrollmenu {
+    color: #202c39;
+}
+
+.files_scrollmenu_tags {
+    display: flex;
+    align-items: center;
+    min-height: 4px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 94%;
+}
+
+.files_scrollmenu_tags::-webkit-scrollbar {
+    width: 0;
+}
+
+.files_scrollmenu_tags .files_tag {
+    padding-top: 2px;
+    margin: 10px auto;
+    min-width: 84px;
+    height: 32px;
+    text-align: center;
+}
+
+.files_btn_tag {
+    width: 70px;
+    height: 34px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: #808080;
+}
+
+.files_btn_tag:hover {
+    background-color: #f4f4f4;
+    color: #202c39;
+}
+
+.files_btn_tag:focus {
+    background-color: #f4f4f4;
+    color: #202c39;
+}
+
+.files_blocks_container {
+    overflow-y: scroll;
+    width: 100%;
+    height: 650px;
+}
+
+.files_date_span {
+    text-transform: uppercase;
+    color: #808080;
+    font-size: 15px;
+}
+
+.files_blocks_container {
+    overflow-y: scroll;
+}
+
+.files_blocks_container::-webkit-scrollbar {
+    width: 0;
+}
+
+
+.files_block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    flex-wrap: wrap;
+    width: 94%;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid #cccccc;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding: 12px;
+}
+
+.files_subtitle_container {
+    display: block; 
+    width: 160px;
+    white-space: normal; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    margin-left: 10px;
+}
+
+.files_container_info {
+    display: flex;
+    justify-content: flex-end; 
+    flex-direction: column; 
+    flex-wrap: wrap;
+    max-width: 90px;
+}
+
+.files_name_header {
+    font-size: 17px;
+    margin: 0; 
+}
+
+.files_detail_info {
+    font-size: 16px;
+    font-weight: 500;
+    color: #7148fc;
+    text-decoration: none;
+    margin-top: 5px; 
+}
+
+.files_icon {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.files_upload_date {
+    color: #4d4d4d;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 2px 0; 
+}
+
+.files_size {
+    color: #808080;
+    font-size: 15px;
+}

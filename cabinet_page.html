@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskmate | Cabinet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/img/icons/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="/css/cabinet_page.css">
+</head>
+
+<body>
+    <section class="cabinet_section">
+        <aside class="cabinet_aside_nav dark_aside_nav">
+            <div class="cabinet_aside_content">
+                <img onclick="window.location.href='/index.html'" class="cabinet_logo" src="/img/icons/logo.png"
+                    alt="logo">
+                <span onclick="window.location.href='/index.html'" class="cabinet_logo_text">taskmate</span>
+            </div>
+            <div class="cabinet_nav_menu">
+                <a href="/home_page.html" class="cabinet_nav__menu" id="cabinet_focus_link"><box-icon
+                        class="cabinet_nav_icon cabinet_focused_icon" name='home'></box-icon><span>Home</span></a>
+                <a href="/contacts_page.html" class="cabinet_nav__menu"><box-icon class="cabinet_nav_icon" type='solid'
+                        name='contact'></box-icon><span>Contacts</span></a>
+                <a href="/notes_page.html" class="cabinet_nav__menu"><box-icon class="cabinet_nav_icon"
+                        name='notepad'></box-icon><span>Notes</span></a>
+                <a href="/files_page.html" class="cabinet_nav__menu"><box-icon class="cabinet_nav_icon"
+                        name='file-blank'></box-icon><span>Files</span></a>
+            </div>
+            <button class="cabinet_btn_aside cabinet_collapse-btn" id="cabinet_collapse_btn">
+                <span class="cabinet_btn_text">Collapse</span>
+                <box-icon class="cabinet_arrow_back" name='arrow-back'></box-icon>
+            </button>
+        </aside>
+
+        <aside class="cabinet_header_nav">
+            <header class="cabinet_home_header">
+                <div class="cabinet_nav_header">
+                    <box-icon onclick="window.location.href='/home_page.html'" class="cabinet_nav_arrow" name='chevron-left'></box-icon>
+                    <box-icon onclick="window.location.href='/home_page.html'" class="cabinet_nav_arrow dark_mode_arrow" name='chevron-right'></box-icon>
+                    <h3 class="cabinet_page_name">Cabinet</h3>
+                </div>
+                <div class="cabinet_search">
+                    <box-icon class="cabinet_search_icon" name='search' color='#494949'></box-icon>
+                    <input class="cabinet_search_bar" type="search" placeholder="Search on Taskmate">
+                </div>
+                <div class="cabinet_fast_nav">
+                    <box-icon class="cabinet_fast_nav_icon dark_mode_btn" name='moon'></box-icon>
+                    <div class="cabinet_bell_block">
+                        <box-icon onclick="window.location.href='/notification_page.html' "class="cabinet_fast_nav_icon dark_bell" name='bell'></box-icon>
+                        <div class="cabinet_red_point"></div>
+                    </div>
+                    <box-icon onclick="window.location.href='/home_page.html'" class="cabinet_fast_nav_icon" id="cabinet_user_circle" name='user-circle' type='solid' color='#7148fc'></box-icon>
+                </div>
+            </header>
+            <section class="cabinet_content">
+
+                <div class="cabinet_paragraph_block">
+                    <h1 class="cabinet_main_paragraph">Reminder</h1>
+                </div>
+                <section class="cabinet_reminder_section">
+                    <div class="cabinet_reminder_wrapper">
+                        <div class="cabinet_event_reminder">
+                            <box-icon class="cross_sign cross_sign_fix" name='x'
+                                onclick="window.location.href='#'"></box-icon>
+                            <div class="event_header_wrapper">
+                                <h2 class="event_reminder_header">Upcoming events! 📅</h2>
+                                <p class="event_reminder_subtitle">Don’t forget about upcomming events!</p>
+                            </div>
+                            <button class="event_reminder_button">To Follow <box-icon class="event_reminder_arrow"
+                                    name='right-arrow-alt'></box-icon></button>
+                        </div>
+                        <div class="cabinet_event_reminder">
+                            <box-icon class="cross_sign cross_sign_fix" name='x'
+                                onclick="window.location.href='#'"></box-icon>
+                            <div class="event_header_wrapper">
+                                <h2 class="event_reminder_header">Finish your Note! 📋</h2>
+                                <p class="event_reminder_subtitle">Don’t forget to finish your note!</p>
+                            </div>
+                            <button class="event_reminder_button">To Follow <box-icon class="event_reminder_arrow"
+                                    name='right-arrow-alt'></box-icon></button>
+                        </div>
+                        <div class="cabinet_event_reminder">
+                            <box-icon class="cross_sign cross_sign_fix" name='x'
+                                onclick="window.location.href='#'"></box-icon>
+                            <div class="event_header_wrapper">
+                                <h2 class="event_reminder_header">Add new friends! 👥</h2>
+                                <p class="event_reminder_subtitle">Always remember if you have a friend you can add him
+                                    in your contacts!</p>
+                            </div>
+                            <button class="event_reminder_button">To Follow <box-icon class="event_reminder_arrow"
+                                    name='right-arrow-alt'></box-icon></button>
+                        </div>
+                        <div class="cabinet_event_reminder">
+                            <box-icon class="cross_sign cross_sign_fix" name='x'
+                                onclick="window.location.href='#'"></box-icon>
+                            <div class="event_header_wrapper">
+                                <h2 class="event_reminder_header">Forgot check recent news?</h2>
+                                <p class="event_reminder_subtitle">You can always check recent news!</p>
+                            </div>
+                            <button class="event_reminder_button">To Follow <box-icon class="event_reminder_arrow"
+                                    name='right-arrow-alt'></box-icon></button>
+                        </div>
+                    </div>
+                    <div class="event_bottom_line"></div>
+                </section>
+
+                <section class="profile_editor">
+                    <div class="edit_profile_wrapper">
+                        <div class="cabinet_edit_profile">
+                            <div class="input_block">
+                                <p class="input_header">Change your name</p>
+                                <input type="text" class="edit_input" placeholder="Denys">
+                            </div>
+                            <div class="input_block">
+                                <p class="input_header">Change your password</p>
+                                <input type="password" class="edit_input password" placeholder="************">
+                                <span class="password_toggle_icon"><i class="fas fa-eye"></i></span>
+                            </div>
+                            <div class="input_block">
+                                <p class="input_header">Change your phone number</p>
+                                <input type="tel" class="edit_input" placeholder="+380(888)-888-12-88">
+                            </div>
+                            <div class="input_block">
+                                <p class="input_header">Confirm change your password</p>
+                                <input type="password" class="edit_input password" placeholder="">
+                                <span class="password_toggle_icon"><i class="fas fa-eye"></i></span>
+                            </div>
+                            <div class="input_block forth_input_block">
+                                <p class="input_header forth_input_header">Change your email</p>
+                                <input type="email" class="edit_input" placeholder="denys343@gmail.com">
+                            </div>
+                        </div>
+                        <div class="edit_profile_asideline"></div>
+                    </div>
+
+                    <div class="cabinets_profile_divider">
+                        <div class="cabinets_profile_wrapper">
+                            <div class="cabinet_profiles">
+                                <p class="name_profile">Denys</p>
+                                <div class="profile_block_wrapper">
+                                    <div class="profile_block">
+                                        <box-icon class="profile_block_img" type='solid' name='user-circle'></box-icon>
+                                        <p class="size_img_text">60 x 60</p>
+                                    </div>
+                                    <button href="#" class="edit_btn">Edit</button>
+                                </div>
+                            </div>
+                            <div class="cabinet_profiles">
+                                <p class="name_profile">Denys_1</p>
+                                <div class="profile_block_wrapper">
+                                    <div class="profile_block">
+                                        <box-icon class="profile_block_img" type='solid' name='user-circle'></box-icon>
+                                        <p class="size_img_text">60 x 60</p>
+                                    </div>
+                                    <button href="#" class="edit_btn">Edit</button>
+                                </div>
+                            </div>
+                            <div class="cabinet_profiles">
+                                <p class="name_profile">...</p>
+                                <div class="profile_block_wrapper">
+                                    <div class="profile_block">
+                                        <box-icon class="profile_block_img" type='solid' name='user-circle'></box-icon>
+                                        <p class="size_img_text">60 x 60</p>
+                                    </div>
+                                    <button href="#" class="edit_btn">Add New</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="change_profile">Change Account <box-icon class="change_profile_arrow"
+                                name='right-arrow-alt'></box-icon></button>
+                    </div>
+                    <div class="media_profile_asideline"></div>
+                    <section class="social_media_section">
+                        <div class="social_media_wrapper">
+                            <p class="social_media_header">Social Media</p>
+                            <div class="wrapper_media_icons">
+                                <div class="wrapper__media_icons">
+                                    <img onclick="window.location.href='#'" src="/img/icons/x.png" alt="x"
+                                        class="media_icons">
+                                </div>
+                                <div class="wrapper__media_icons">
+                                    <img onclick="window.location.href='#'" src="/img/icons/instagram.png"
+                                        alt="instagram" class="media_icons">
+                                </div>
+                                <div class="wrapper__media_icons">
+                                    <img onclick="window.location.href='#'" src="/img/icons/telegram.png" alt="telegram"
+                                        class="media_icons">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="privacy_block">
+                            <a href="#" class="privacy">Policy and Privacy | 2024 ©</a>
+                        </div>
+                    </section>
+                </section>
+                <div class="cabinet_section_underline"></div>
+                <div class="cabinet_undercontnet_btns">
+                    <button class="submit_btn">Submit Changes</button>
+                    <button class="log_out_btn">Log out</button>
+                </div>
+            </section>
+        </aside>
+    </section>
+
+    <!-- js file link -->
+    <script src="/js/cabinet_page.js"></script>
+</body>
+
+</html>

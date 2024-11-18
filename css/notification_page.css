@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.notification_section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notification_aside_nav {
+    max-width: 270px;
+    padding: 15px;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    transition: all 1s ease;
+}
+
+/* .dark-mode {
+    background-color: #1B1B1C;
+}
+
+.dark-mode .nav__menu {
+    color: #8d8d8d; 
+}
+
+
+.dark-mode .nav__menu:hover {
+    color: #ffffff; 
+}
+
+.dark-mode .logo_text {
+    color: #ffffff; 
+}
+
+.dark-mode .nav_icon {
+    fill: #8d8d8d; 
+}
+
+.dark-mode .focused_icon {
+    fill: #ffffff;
+}
+
+.dark-mode .arrow_back {
+    fill: #ffffff;
+}
+
+.nav-header-arrows {
+    fill: #ffffff;
+}
+
+.no_click_arrow {
+    fill: #b3b3b3;
+}
+
+.nav-header-arrow {
+    fill: #ffffff;
+}
+
+.nav_icon {
+    fill: #000000; 
+}
+
+
+.nav_menu #focus_link:focus {
+    color: #202c39;
+}
+
+
+.dark-mode .nav_menu #focus_link:focus {
+    color: #ffffff;
+}
+
+
+.nav_menu #focus_link {
+    color: #202c39;
+}
+
+.dark-mode .nav_menu #focus_link {
+    color: #ffffff;
+}
+
+.dark-home-content {
+    background-color: #2a2b2b;
+}
+
+.dark-aside-header {
+    background-color: #2a2b2b;
+    color: #ffffff;
+}
+
+.dark-collapse-btn {
+    background-color: #1b1b1c;
+    color: #ffffff;
+    border-color: #ffffff;
+} */
+
+
+.notification_aside_content {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.notification_logo {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.notification_logo_text {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #202c39;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.notification_nav_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 120px;
+    margin: 20vh auto;
+    height: 250px;
+    
+}
+
+.notification_nav__menu {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #7a7a7a;
+    font-weight: 500;
+    
+}
+.notification_nav__menu:hover {
+    color: #202c39;
+}
+
+#notification_focus_link:focus {
+    outline: none;
+}
+
+.notification_nav_icon {
+    margin-right: 15px;
+}
+
+.notification_btn_aside {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    width: 190px;
+    height: 40px;
+    border: 2px solid #ababab;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.notification_btn_aside:hover {
+    background-color: #7148fc;
+    transition-duration: 1s;
+    transition-property: all;
+    border: none;
+    color: #fff;
+}
+
+.notification_btn_aside:hover .notification_arrow_back {
+    fill: #ffffff;
+    transition: all 1s ease;
+}
+
+.notification_aside_nav.collapsed {
+    max-width: 60px; 
+    padding: 15px 0;
+    transition: all 1s ease;
+}
+
+.notification_aside_nav.collapsed .notification_nav_menu {
+    width: 100%; 
+}
+
+.notification_aside_nav.collapsed .notification_aside_content .notification_logo {
+    margin-right: 10px;
+}
+
+.notification_aside_nav.collapsed .notification_logo_text, 
+.notification_aside_nav.collapsed .notification_nav__menu span, 
+.notification_aside_nav.collapsed .notification_btn_aside {
+    display: none;
+    transition: all 1s ease;
+}
+
+.notification_aside_nav.collapsed .notification_nav_icon {
+    margin-right: 0; 
+    justify-content: center;
+    display: block;
+    transition: all 1s ease;
+}
+
+.notification_aside_nav.collapsed .notification_nav__menu {
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+#notification_collapse_btn {
+    display: flex;
+    justify-content: center;
+}
+
+.notification_aside_nav.collapsed #notification_collapse_btn {
+    width: 40px;
+    height: 40px;
+    background-color: #7148fc;
+    border: none;
+    fill: #ffffff;
+}
+
+.notification_aside_nav.collapsed .notification_btn_aside span {
+    display: none;
+}
+
+.notification_aside_nav.collapsed .notification_arrow_back {
+    margin: 0 auto;
+    transform: rotate(180deg);
+    transition: all 1s ease;
+    fill: #ffffff;
+}
+
+.notification_btn_aside {
+    transition: all 1s ease;
+}
+
+.notification_arrow_back {
+    margin-left: 20px;
+}
+
+.notification_header_nav {
+    width: 100%;
+    transition: all 1s ease;
+}
+
+.notification_home_header {
+    width: 100%;
+    height: 64px;
+}
+
+.notification_nav_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 182px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.notification_nav_arrow {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.notification_page_name {
+    color: #202c39;
+    font-weight: 500;
+}
+
+.notification_search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -32px;
+}
+
+.notification_search_bar {
+    width: 300px;
+    height: 40px;
+    padding-left: 44px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+}
+
+.notification_search_icon {
+    position: absolute;
+    margin-right: 250px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
+}
+
+.notification_fast_nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    float: right;
+    width: 180px;
+    margin-top: -40px;
+    margin-right: 20px;
+}
+
+.notification_bell_block {
+    display: flex;
+    justify-content: space-around;
+}
+
+.notification_red_point {
+    width: 6px;
+    height: 6px;
+    background-color: #EB4034;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.notification_fast_nav_icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#user_circle {
+    width: 45px;
+    height: 45px;
+}
+
+.notification_content {
+    max-width: 100%;
+    height: auto;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 35px;
+    transition: all 1s ease;
+}
+
+.notification_paragraph_block {
+    width: 100%;
+    height: 54px;
+}
+
+.notification_main_paragraph {
+    font-size: 25px;
+    font-weight: 600;
+    color: #202c39;
+}
+
+.notification_paragraph_underline {
+    width: 100%;
+    border: 1px solid #cccccc;
+    margin-top: 15px;
+}
+
+.notification_mainsearch_icon {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.notification_search_container {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding-left: 50px;
+    height: 50px;
+    margin-top: 16px;
+}
+
+.notification_mainsearch_icon {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.notification_line_search {
+    width: 2px;
+    height: 30px;
+    background-color: #ababab;
+    margin-right: 24px;
+}
+
+.notification_sort_icon {
+    margin-right: 5px;
+}
+  
+.notification_content_search[type="search"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: #f4f4f4;
+}
+  
+.notification_filter {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    margin-right: 66px;
+    color: #606871;
+}
+
+.notification_filter_option {
+    background-color: #eeeeee;
+}
+
+.notification_downloads {
+    width: 100%;
+    height: 650px;
+    margin-top: 20px;
+}
+
+.notification_scroll_block {
+    width: 100%;
+    overflow-y: scroll;
+    height: 650px;
+}
+
+.notification_scroll_block::-webkit-scrollbar {
+    width: 0;
+}
+
+.download_date_block {
+    margin-bottom: 20px;
+}
+
+.main_date_text {
+    color: #666666;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.file_download_block {
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    border: 1px solid #00C108;
+    background-color: #ccf3ce;
+}
+
+.file_type {
+    font-weight: 600;
+}
+
+.full_file_name {
+    color: #7148fc;
+    cursor: pointer;
+}
+
+.download_overview_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #7148fc;
+    min-width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.download_overview_btn:hover {
+    color: #202c39;
+    border: 2px solid #7148fc;
+    background-color: #ffffff;
+    transition: all 0.6s ease;
+}
+
+.download_overview_btn:hover .overview_right_arrow {
+    fill: #202c39;
+    transition: all 0.6s ease;
+}
+
+.overview_right_arrow {
+    margin-left: 10px;
+    fill: #ffffff;
+}
+
+.date_block_1 {
+    margin-top: 50px;
+}
+
+.date_block_1 .main_date_text {
+    color: #666666;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.date_block_1 .file_download_block {
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    border: 1px solid #EB4034;
+    background-color: #fbd9d6;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1100px) {
+
+    .download_overview_btn{
+        min-width: 150px;
+        height: 40px;
+    }
+
+    .notification_search_bar {
+        width: 250px;
+    }
+
+    .notification_search_icon {
+        margin-right: 200px;
+    }
+}

@@ -1,0 +1,573 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.notes_section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notes_aside_nav {
+    max-width: 270px;
+    padding: 15px;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    transition: all 1s ease;
+}
+
+.notes_aside_content {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /* padding: 5px 20px 20px 20px; */
+}
+
+.notes_logo {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.notes_logo_text {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #202c39;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.notes_nav_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 120px;
+    margin: 20vh auto;
+    height: 250px;
+
+}
+
+.notes_nav__menu {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #7a7a7a;
+    font-weight: 500;
+
+}
+
+.notes_nav__menu:hover {
+    color: #202c39;
+}
+
+#focus_link:focus {
+    outline: none;
+}
+
+.notes_nav_icon {
+    margin-right: 15px;
+}
+
+.notes_btn_aside {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    width: 190px;
+    height: 40px;
+    border: 2px solid #ababab;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 1s ease;
+}
+
+.notes_btn_aside:hover {
+    background-color: #7148fc;
+    transition-duration: 1s;
+    transition-property: all;
+    border: none;
+    color: #fff;
+}
+
+.notes_btn_aside:hover .notes_arrow_back {
+    fill: #ffffff;
+    transition: 1s;
+}
+
+.notes_aside_nav.collapsed {
+    max-width: 60px;
+    padding: 15px 0;
+    transition: all 1s ease;
+}
+
+.notes_aside_nav.collapsed .notes_nav_menu {
+    width: 100%;
+}
+
+.notes_aside_nav.collapsed .notes_aside_content .notes_logo {
+    margin-right: 10px;
+}
+
+.notes_aside_nav.collapsed .notes_logo_text,
+.notes_aside_nav.collapsed .notes_nav__menu span,
+.notes_aside_nav.collapsed .notes_btn_aside {
+    display: none;
+    transition: all 1s ease;
+}
+
+.notes_aside_nav.collapsed .notes_nav_icon {
+    margin-right: 0;
+    justify-content: center;
+    display: block;
+    transition: all 1s ease;
+}
+
+.notes_aside_nav.collapsed .notes_nav__menu {
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+#collapse_btn {
+    display: flex;
+    justify-content: center;
+}
+
+.notes_aside_nav.collapsed #collapse_btn {
+    width: 40px;
+    height: 40px;
+    background-color: #7148fc;
+    border: none;
+    color: #202c39;
+}
+
+.notes_aside_nav.collapsed .notes_btn_aside span {
+    display: none;
+}
+
+.notes_aside_nav.collapsed .notes_arrow_back {
+    margin: 0 auto;
+    transform: rotate(180deg);
+    transition: all 1s ease;
+    fill: #ffffff;
+}
+
+.notes_arrow_back {
+    margin-left: 20px;
+}
+
+.notes_header_nav {
+    width: 100%;
+}
+
+.notes_header {
+    width: 100%;
+    height: 64px;
+}
+
+.notes_nav_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 127px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.notes_nav_arrow {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.notes_page_name {
+    color: #202c39;
+    font-weight: 500;
+}
+
+.notes_search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -32px;
+}
+
+.notes_search_icon {
+    position: absolute;
+    margin-right: 250px;
+}
+
+.notes_search_bar {
+    width: 300px;
+    height: 40px;
+    padding-left: 44px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
+}
+
+.notes_fast_nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    float: right;
+    width: 180px;
+    margin-top: -40px;
+    margin-right: 20px;
+}
+
+.notes_nav__icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.notes_bell_block {
+    display: flex;
+    justify-content: space-around;
+}
+
+.notes_red_point {
+    width: 6px;
+    height: 6px;
+    background-color: #EB4034;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#notes_user_circle {
+    width: 45px;
+    height: 45px;
+}
+
+.notes_content {
+    max-width: 77%;
+    height: auto;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.notes_paragraph_block {
+    width: 100%;
+    height: 54px;
+}
+
+.notes_paragraph {
+    font-size: 25px;
+    font-weight: 600;
+    color: #202c39;
+}
+
+.note_container {
+    margin-top: 20px;
+    border-radius: 12px;
+    padding: 20px;
+    width: 97%;
+    min-height: 550px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border: 2px solid #cccccc;
+}
+
+
+.note_title {
+    width: 97%;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.note_title::placeholder {
+    color: #999;
+    font-weight: 600;
+}
+
+
+.note_content {
+    width: 100%;
+    min-height: 500px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+
+}
+
+.note_content::placeholder {
+    color: #999;
+}
+
+.note_content::-webkit-scrollbar {
+    width: 15px; /* Ширина всего элемента навигации */
+  }
+  
+.note_content::-webkit-scrollbar-track {
+    background: #cccccc; /* Цвет дорожки */
+  }
+  
+.note_content::-webkit-scrollbar-thumb {
+    background-color: #808080; /* Цвет бегунка */
+    cursor: pointer;
+  }
+
+.note_tag {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* margin-top: 300px; */
+}
+
+
+.add_note_container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.add_note_btnunderline {
+    max-width: 97%;
+    border: 1px solid #cccccc;
+}
+
+.add_note_btn {
+    width: 97%;
+    background-color: #fff;
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+.add_note_btn:hover {
+    background-color: #7148fc;
+    color: #fff;
+    border: none;
+    transition: all 0.8s ease;
+}
+
+
+.add_note_btn span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.notes_aside_line {
+    width: 2px;
+    height: 778px;
+    background-color: #cccccc;
+    float: right;
+    margin-top: -27px;
+}
+
+.notes_aside_bar {
+    position: absolute;
+    width: 18%;
+    height: 778px;
+    margin-top: -27px;
+    padding-top: 5px;
+    right: 5px;
+    max-height: 778px;
+}
+
+/* .notes_aside_bar::-webkit-scrollbar {
+    width: 0;
+} */
+
+.notes_aside_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notes_aside_text {
+    color: #202c39;
+}
+
+.notes_search_filter {
+    margin-right: 20px;
+    padding-left: 10px;
+}
+
+.notes_search_filter {
+    position: relative;
+    display: inline-block;
+    max-width: auto;
+    height: 35px;
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-right: 3px;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+
+.notes_search_filter select {
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    color: #333;
+    outline: none;
+}
+
+.notes_filter_option {
+    text-align: center;
+}
+
+.filter_icon_span {
+    position: absolute;
+    top: 55%;
+    left: 0;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #555;
+}
+
+.filter_icon {
+    width: 20px;
+}
+
+.notes_search_filter:hover {
+    border-color: #bbb;
+}
+
+.notes_mainsearch_icon {
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.filter_search_bar {
+    width: 94%;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding-left: 50px;
+    height: 40px;
+    margin-top: 16px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
+}
+
+.notes_content_search {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #f4f4f4;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.notes_blocks_container {
+    overflow-y: scroll;
+    width: 100%;
+    height: 650px;
+    margin-top: 30px;
+}
+
+.notes_blocks_container::-webkit-scrollbar {
+    width: 0;
+}
+
+.notes_date_span {
+    text-transform: uppercase;
+    color: #808080;
+    font-size: 15px;
+}
+
+.notes_block {
+    flex-wrap: wrap;
+    width: 94%;
+    height: 120px;
+    border-radius: 12px;
+    border: 2px solid #cccccc;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-bottom: 12px;
+}
+
+.notes_maintext_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notes_tag_container {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #7148fc;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.notes_block_maintext {
+    font-size: 19px;
+    color: #202c39;
+}
+
+.notes_subtitle_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notes_block_subtitle {
+    width: 80%;
+    font-size: 15px;
+    color: #4d4d4d;
+    font-weight: 500;
+}
+
+.notes_follow_arrow {
+    width: 30px;
+    height: 30px;
+    margin-right: 12px;
+    cursor: pointer;
+}

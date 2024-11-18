@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskmate | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/img/icons/logo.png">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="/css/home_page.css">
+</head>
+
+<body>
+    <section class="home_section">
+        <aside class="aside_nav dark_aside_nav">
+            <div class="aside_content">
+                <img onclick="window.location.href='/index.html'" class="logo" src="/img/icons/logo.png" alt="logo">
+                <span onclick="window.location.href='/index.html'" class="logo_text">taskmate<span class="premium_account"> +</span></span>
+            </div>
+            <div class="nav_menu">
+                <a href="/home_page.html" class="nav__menu" id="focus_link"><box-icon class="nav_icon focused_icon" name='home'></box-icon><span>Home</span></a>
+                <a href="/contacts_page.html" class="nav__menu"><box-icon class="nav_icon" type='solid' name='contact'></box-icon><span>Contacts</span></a>
+                <a href="/notes_page.html" class="nav__menu"><box-icon class="nav_icon" name='notepad'></box-icon><span>Notes</span></a>
+                <a href="/files_page.html" class="nav__menu"><box-icon class="nav_icon" name='file-blank'></box-icon><span>Files</span></a>
+            </div>
+            <button class="btn_aside collapse-btn" id="collapse_btn">
+                <span class="btn_text">Collapse</span>
+                <box-icon class="arrow_back" name='arrow-back'></box-icon>
+            </button>
+        </aside>
+
+        <aside class="aside_header_nav">
+            <header class="home_header">
+                <div class="nav_header">
+                    <box-icon class="nav_arrow no_click_arrow" name='chevron-left'></box-icon>
+                    <box-icon onclick="window.location.href='/contacts_page.html'" class="nav_arrow dark_mode_arrow"
+                        name='chevron-right'></box-icon>
+                    <h3 class="page_name">Home</h3>
+                </div>
+                <div class="search">
+                    <box-icon class="search_icon" name='search' color='#494949'></box-icon>
+                    <input class="search_bar" type="search" placeholder="Search on Taskmate">
+                </div>
+                <div class="fast_nav">
+                    <box-icon class="fast_nav_icon dark_mode_btn" name='moon'></box-icon>
+                    <div class="home_bell_block">
+                        <box-icon onclick="window.location.href='/notification_page.html'" class="fast_nav_icon dark_bell" name='bell'></box-icon>
+                        <div class="home_red_point"></div>
+                    </div>
+                    <box-icon onclick="window.location.href='/cabinet_page.html'" class="fast_nav_icon" id="user_circle" name='user-circle' type='solid' color='#7148fc'></box-icon>
+                </div>
+            </header>
+
+            <section class="home_content">
+
+                <div class="main_paragraph_block">
+                    <h1 class="main_paragraph">Welcome, Denys!</h1>
+                    <p class="main_paragraph_subtitle">We wish you have a good day! See the most relevant here.</p>
+                </div>
+
+                <div class="wrapper_home_content">
+                    <div class="reminder_blocks_flex">
+                        <div class="reminder_blocks">
+
+                            <div class="reminder__block first_block">
+                                <h3 class="reminder_main_text purple_text">Contacts</h3>
+                                <p class="reminder_description">Don't forget to wish <span
+                                        onclick="window.location.href='#'" class="name_user_id">Denys</span> a happy
+                                    birthday today</p>
+                                <div class="nav_reminder_block">
+                                    <div class="reminder_arrow_link arrow_block">
+                                        <box-icon class="arrow_link" name='right-arrow-alt'></box-icon>
+                                    </div>
+                                    <box-icon class="cross_sign cross_sign_fix" name='x'
+                                        onclick="window.location.href='#'"></box-icon>
+                                    <img class="reminder_blocks_img cracker_fix" src="/img/icons/cracker.png"
+                                        alt="cracker">
+                                </div>
+                            </div>
+                            <div class="reminder__block second_block">
+
+                                <h3 class="reminder_main_text peach_text">Notes</h3>
+                                <p class="reminder_description">Finish your <span onclick="window.location.href='#'"
+                                        class="todo_list">to-do list</span> for tomorrow</p>
+                                <div class="nav_reminder_block notes_reminder_fix">
+                                    <div class="reminder_arrow_link second_arrow_fix">
+                                        <box-icon class="arrow_link" name='right-arrow-alt'></box-icon>
+                                    </div>
+                                    <box-icon class="cross_sign second_cross_fix" name='x'
+                                        onclick="window.location.href='#'"></box-icon>
+                                    <img class="reminder_blocks_img" src="/img/icons/notepade.png" alt="notepad">
+                                </div>
+                            </div>
+                            <div class="reminder__block third_block">
+
+                                <h3 class="reminder_main_text lime_text">Files</h3>
+                                <p class="reminder_description">You didn't forget about the save <span
+                                        onclick="window.location.href='#'" class="save_file">file?</span></p>
+                                <div class="nav_reminder_block fix_position_reminder">
+                                    <div class="reminder_arrow_link third_arrow_fix">
+                                        <box-icon class="arrow_link" name='right-arrow-alt'></box-icon>
+                                    </div>
+                                    <box-icon class="cross_sign third_cross_fix" name='x'
+                                        onclick="window.location.href='#'"></box-icon>
+                                    <img class="reminder_blocks_img" src="/img/icons/pushpin.png" alt="pushpin">
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="reminder_aside_line"></div>
+                    </div>
+
+                    <div class="home_content_underline"></div>
+
+                    <div class="all_charts_block">
+                        <div class="chart_block_wrapper" id="container_wrapper">
+                            <div class="chart_block">
+                                <!-- add 'id' for data in chart elements -->
+                                <div class="chart_main_block">
+                                    <p class="chart_main_text">Users inflow per month</p>
+                                    <h2 class="add_users_text"><span class="number_add_user">+3000</span> users in
+                                        August
+                                        <span class="inflow_prossents">- 10%</span> <span
+                                            class="users_stat">users</span>
+                                    </h2>
+                                    <select class="select_year" name="years" id="years">
+                                        <option value="2024">2024</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2021">2020</option>
+                                    </select>
+                                </div>
+
+                                <div class="inflow_stat">
+                                    <canvas id="inflowStatistic"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chart_additional_stat">
+
+                            <div class="total_user_block">
+                                <div class="circle_container">
+                                    <div class="circle_box">
+                                        <!-- Add in data-percent 'id' -->
+                                        <div class="circle_chart" data-percent="25">
+                                            <span>25</span><span>k</span>
+                                        </div>
+                                    </div>
+                                    <h2 class="reg_users_text">Registrated users</h2>
+                                    <p class="reg_users_subtitle">Total Users</p>
+                                </div>
+                            </div>
+                            <div class="current_online_block">
+                                <div class="online_content_block">
+                                    <div class="online_text_block">
+                                        <h4 class="users_online">Users at the moment</h4>
+                                        <p class="online">Online</p>
+                                    </div>
+                                    <div class="online_stat">
+                                        <canvas id="onlineStatus"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="side_line"></div>
+
+                <aside class="carusel_aside">
+                    <section class="carusel_section">
+                        <h2 class="main_text_scrollmenu">Recent news 🔥</h2>
+                        <div class="scrollmenu_tags">
+                            <div class="tag"> <button href="#" class="btn_tag">Popular</button> </div>
+                            <div class="tag"> <button href="#" class="btn_tag">Newest</button> </div>
+                            <div class="tag"> <button href="#" class="btn_tag">Ukraine</button> </div>
+                            <div class="tag"> <button href="#" class="btn_tag">World</button> </div>
+                            <div class="tag"> <button href="#" class="btn_tag">America</button> </div>
+                            <div class="tag"> <button href="#" class="btn_tag">France</button> </div>
+                            <div class="tag"> <button href="#" class="btn_tag">Alaska</button> </div>
+                            <div class="tag"> <button href="#" class="btn_tag">Bulgaria</button> </div>
+                            <div class="tag"> <button href="#" class="btn_tag">Rome</button> </div>
+                        </div>
+                        <div class="news_scrollmenu">
+                            <div class="news_scrollmenu_block">
+                                <img class="news_scrollmenu_img" onclick="window.location.href='#'"
+                                    src="/img/carusel_imgs/israel.png" alt="israel">
+                                <h4 class="news_main_text first_news_header">Houthis Launch Missile at Central Israel</h4>
+                                <p class="news_subtitle first_el">New York Times <span class="news_scrollmenu_date"> •
+                                        Sept
+                                        15</span></p>
+                            </div>
+                            <div class="news_scrollmenu_block">
+                                <img class="news_scrollmenu_img" onclick="window.location.href='#'"
+                                    src="/img/carusel_imgs/central_europe.png" alt="central_europe">
+                                <div class="news_scrollmenu_wrapper">
+                                <h4 class="news_main_text second_news_header">Floods claim more lives as torrential rain pounds central
+                                    Europe
+                                </h4>
+                                <p class="news_subtitle second_el">Reuters <span class="news_scrollmenu_date"> • Sept
+                                        14</span></p>
+                                    </div>
+                            </div>
+                            <div class="news_scrollmenu_block">
+                                <img class="news_scrollmenu_img" onclick="window.location.href='#'"
+                                    src="/img/carusel_imgs/sea.png" alt="sea">
+                                <h4 class="news_main_text third_news_header">Norwegian ships stand for a long time and wait for their
+                                    acceptance at port</h4>
+                                <p class="news_subtitle third_el">The Local Norway <span class="news_scrollmenu_date"> • Sept
+                                        11</span></p>
+                            </div>
+                            <div class="news_scrollmenu_block">
+                                <img class="news_scrollmenu_img" onclick="window.location.href='#'"
+                                    src="/img/carusel_imgs/sea.png" alt="sea">
+                                <h4 class="news_main_text forth_news_header">Norwegian ships stand for a long time and wait for their
+                                    acceptance at port</h4>
+                                <p class="news_subtitle forth_el">The Local Norway <span class="news_scrollmenu_date"> •
+                                        Sept 9</span></p>
+                            </div>
+                        </div>
+                    </section>
+                </aside>
+
+            </section>
+
+        </aside>
+
+
+    </section>
+
+    <!-- Circle chart -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="/js/jquery.easypiechart.js"></script>
+
+    <!-- Bar chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- js file link -->
+    <script src="/js/home_page.js"></script>
+</body>
+
+</html>

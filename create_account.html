@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskmate | Create Account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/img/icons/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="/css/create_account.css">
+</head>
+
+<body>
+    <header class="header_logo">
+        <div class="header_content">
+            <img class="logo" src="/img/icons/logo.png" alt="logo">
+            <a href="/index.html" class="logo_text">taskmate</a>
+        </div>
+    </header>
+    <section class="create_account">
+        <div class="create">
+            <div class="create_content">
+                <h1 class="create_main_text">Sign up to taskmate</h1>
+                <p class="create_main_subtitle">Already have an account? <span><a class="log_in_span" href="/login.html">Log in</a></span></p>
+            </div>
+            <div class="create_inputs">
+
+                <h3 class="username_main_text">Username</h3>
+                <input class="username_input" type="username" placeholder="Terminator3000">
+
+                <h3 class="username_main_text">Email or Phone number</h3>
+                <input class="username_input" type="email" placeholder="name@damain.com or (555) 555-1234">
+
+                <h3 class="username_main_text">Password</h3>
+                <input class="username_input" type="password" placeholder="6+ characrters" id="password">
+                <!-- <span class="toggle-password"><img class="eye_crossed" onclick="togglePasswordVisibility()" src="/img/icons/eye-crossed.png" alt="eye-crossed"></span> -->
+                <span class="password_toggle_icon"><i class="fas fa-eye"></i></span>
+            </div>
+            <button onclick="window.location.href='/home_page.html'" class="btn_create_account">Create account</button>
+            <p class="policy">By creating an account you agree with our
+                <a href="#" class="link_policy">Terms of Service</a> and
+                <a href="#" class="link_policy">Privacy Policy.</a>
+            </p>
+        </div>
+    </section>
+
+    <script src="/js/create_account.js"></script>
+</body>
+
+</html>

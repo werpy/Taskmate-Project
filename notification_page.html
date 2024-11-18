@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskmate | Notification</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/img/icons/logo.png">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="/css/notification_page.css">
+</head>
+
+<body>
+
+    <section class="notification_section">
+        <aside class="notification_aside_nav dark_aside_nav">
+            <div class="notification_aside_content">
+                <img onclick="window.location.href='/index.html'" class="notification_logo" src="/img/icons/logo.png"
+                    alt="logo">
+                <span onclick="window.location.href='/index.html'" class="notification_logo_text">taskmate</span>
+            </div>
+            <div class="notification_nav_menu">
+                <a href="/home_page.html" class="notification_nav__menu" id="notification_focus_link"><box-icon
+                        class="notification_nav_icon focused_icon" name='home'></box-icon><span>Home</span></a>
+                <a href="/contacts_page.html" class="notification_nav__menu"><box-icon class="notification_nav_icon"
+                        type='solid' name='contact'></box-icon><span>Contacts</span></a>
+                <a href="/notes_page.html" class="notification_nav__menu"><box-icon class="notification_nav_icon"
+                        name='notepad'></box-icon><span>Notes</span></a>
+                <a href="/files_page.html" class="notification_nav__menu"><box-icon class="notification_nav_icon"
+                        name='file-blank'></box-icon><span>Files</span></a>
+            </div>
+            <button class="notification_btn_aside notification_collapse-btn" id="notification_collapse_btn">
+                <span class="notification_btn_text">Collapse</span>
+                <box-icon class="notification_arrow_back" name='arrow-back'></box-icon>
+            </button>
+        </aside>
+        <aside class="notification_header_nav">
+            <header class="notification_home_header">
+                <div class="notification_nav_header">
+                    <box-icon onclick="window.location.href='/home_page.html'" class="notification_nav_arrow" name='chevron-left'></box-icon>
+                    <box-icon onclick="window.location.href='/home_page.html'" class="notification_nav_arrow dark_mode_arrow" name='chevron-right'></box-icon>
+                    <h3 class="notification_page_name">Notification</h3>
+                </div>
+                <div class="notification_search">
+                    <box-icon class="notification_search_icon" name='search' color='#494949'></box-icon>
+                    <input class="notification_search_bar" type="search" placeholder="Search on Taskmate">
+                </div>
+                <div class="notification_fast_nav">
+                    <box-icon class="notification_fast_nav_icon dark_mode_btn" name='moon'></box-icon>
+                    <box-icon onclick="window.location.href='/notification_page.html'" class="notification_fast_nav_icon dark_bell" name='bell'></box-icon>
+                    <box-icon onclick="window.location.href='/cabinet_page.html'" class="notification_fast_nav_icon"
+                        id="user_circle" name='user-circle' type='solid' color='#7148fc'></box-icon>
+                </div>
+            </header>
+
+            <section class="notification_content">
+
+                <div class="notification_paragraph_block">
+                    <h1 class="notification_main_paragraph">Notification</h1>
+                    <div class="notification_paragraph_underline"></div>
+                </div>
+
+                <box-icon class="notification_mainsearch_icon" name='search' color='#494949'></box-icon>
+
+                <div class="notification_search_container">
+                    <input class="notification_content_search" type="search" placeholder="Search download history...">
+                    <div class="notification_line_search"></div>
+                    <box-icon class="notification_sort_icon" name='sort' color='#606871'></box-icon>
+                    <select class="notification_filter">
+                        <box-icon name='filter-alt'></box-icon>
+                        <option class="notification_filter_option" value="name">By name</option>
+                        <option class="notification_filter_option" value="name">By Surname</option>
+                        <option class="notification_filter_option" value="name">By Alphabet</option>
+                    </select>
+                </div>
+
+                <section class="notification_downloads">
+                    <div class="notification_scroll_block">
+                        <div class="date_block_0">
+                            <div class="download_date_block">
+                                <span class="main_date_text">Yesterday</span>
+                                <div class="file_download_block">
+                                    <p class="name_file_download">
+                                        <span class="download_icon_status">✅️</span>
+                                        <span class="file_type">Your file</span>
+                                        <span class="file_name">Photo_2</span>
+                                        <span class="full_file_name" onclick="window.location.href='#'">IMG_1234568.jpg</span>
+                                        <span class="download_status">upload successfully!</span>
+                                    </p>
+                                    <button class="download_overview_btn">Overview <box-icon class="overview_right_arrow" name='right-arrow-alt'></box-icon></button>
+                                </div>
+                            </div>
+                            <div class="download_date_block">
+                                <div class="file_download_block">
+                                    <p class="name_file_download">
+                                        <span class="download_icon_status">✅️</span>
+                                        <span class="file_type">Your file</span>
+                                        <span class="file_name">Photo_1</span>
+                                        <span class="full_file_name" onclick="window.location.href='#'">IMG_1234567.jpg</span>
+                                        <span class="download_status">upload successfully!</span>
+                                    </p>
+                                    <button class="download_overview_btn">Overview <box-icon class="overview_right_arrow" name='right-arrow-alt'></box-icon></button>
+                                </div>
+                            </div>
+                            <div class="download_date_block">
+                                <div class="file_download_block">
+                                    <p class="name_file_download">
+                                        <span class="download_icon_status">✅️</span>
+                                        <span class="file_type">Your file</span>
+                                        <span class="file_name">Photo_1</span>
+                                        <span class="full_file_name" onclick="window.location.href='#'">IMG_1234567.jpg</span>
+                                        <span class="download_status">upload successfully!</span>
+                                    </p>
+                                    <button class="download_overview_btn">Overview <box-icon class="overview_right_arrow" name='right-arrow-alt'></box-icon></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="date_block_1">
+                            <div class="download_date_block">
+                                <span class="main_date_text">2 Days ago</span>
+                                <div class="file_download_block">
+                                    <p class="name_file_download">
+                                        <span class="download_icon_status">❌</span>
+                                        <span class="file_type">Your file</span>
+                                        <span class="file_name">Photo_2</span>
+                                        <span class="full_file_name"
+                                            onclick="window.location.href='#'">IMG_1234568.jpg</span>
+                                        <span class="download_status">upload failed!</span>
+                                    </p>
+                                    <button class="download_overview_btn">Overview <box-icon class="overview_right_arrow" name='right-arrow-alt'></box-icon></button>
+                                </div>
+                                <div class="file_download_block">
+                                    <p class="name_file_download">
+                                        <span class="download_icon_status">❌</span>
+                                        <span class="file_type">Your file</span>
+                                        <span class="file_name">Photo_2</span>
+                                        <span class="full_file_name"
+                                            onclick="window.location.href='#'">IMG_1234568.jpg</span>
+                                        <span class="download_status">upload failed!</span>
+                                    </p>
+                                    <button class="download_overview_btn">Overview <box-icon class="overview_right_arrow" name='right-arrow-alt'></box-icon></button>
+                                </div>
+                                <div class="file_download_block">
+                                    <p class="name_file_download">
+                                        <span class="download_icon_status">❌</span>
+                                        <span class="file_type">Your file</span>
+                                        <span class="file_name">Photo_2</span>
+                                        <span class="full_file_name"
+                                            onclick="window.location.href='#'">IMG_1234568.jpg</span>
+                                        <span class="download_status">upload failed!</span>
+                                    </p>
+                                    <button class="download_overview_btn">Overview <box-icon class="overview_right_arrow" name='right-arrow-alt'></box-icon></button>
+                                </div>
+                                <div class="file_download_block">
+                                    <p class="name_file_download">
+                                        <span class="download_icon_status">❌</span>
+                                        <span class="file_type">Your file</span>
+                                        <span class="file_name">Photo_2</span>
+                                        <span class="full_file_name"
+                                            onclick="window.location.href='#'">IMG_1234568.jpg</span>
+                                        <span class="download_status">upload failed!</span>
+                                    </p>
+                                    <button class="download_overview_btn">Overview <box-icon class="overview_right_arrow" name='right-arrow-alt'></box-icon></button>
+                                </div>
+                                <div class="file_download_block">
+                                    <p class="name_file_download">
+                                        <span class="download_icon_status">❌</span>
+                                        <span class="file_type">Your file</span>
+                                        <span class="file_name">Photo_2</span>
+                                        <span class="full_file_name"
+                                            onclick="window.location.href='#'">IMG_1234568.jpg</span>
+                                        <span class="download_status">upload failed!</span>
+                                    </p>
+                                    <button class="download_overview_btn">Overview <box-icon class="overview_right_arrow" name='right-arrow-alt'></box-icon></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>           
+                </section>
+
+            </section>
+        </aside>
+    </section>
+
+    <!-- js file link -->
+    <script src="/js/notification_page.js"></script>
+</body>
+
+</html>

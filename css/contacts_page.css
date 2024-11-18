@@ -1,0 +1,579 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.contacts_section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts_aside_nav {
+    max-width: 270px;
+    padding: 15px;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    transition: all 1s ease;
+}
+
+.contacts_aside_content {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+}
+
+.contacts_logo {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.contacts_logo_text {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #202c39;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.contacts_nav_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 120px;
+    margin: 20vh auto;
+    height: 250px;
+    
+}
+
+.contacts_nav__menu {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #7a7a7a;
+    font-weight: 500;
+    
+}
+.contacts_nav__menu:hover {
+    color: #202c39;
+}
+
+/* #focus_link:focus {
+    outline: none;
+    color: #202c39 !important;
+} */
+
+#focus_link {
+    color: #202c39;
+}
+
+.dark-mode {
+    background-color: #1B1B1C;
+}
+
+.dark-mode .contacts_nav__menu {
+    color: #8d8d8d;
+}
+
+.dark-mode .contacts_nav__menu:hover {
+    color: #ffffff;
+}
+
+.dark-mode .contacts_logo_text {
+    color: #ffffff;
+}
+
+.dark-mode .contacts_nav_icon {
+    fill: #8d8d8d;
+}
+
+.dark-mode .focused_icon {
+    fill: #ffffff;
+}
+
+.dark-mode .contacts_arrow_back {
+    fill: #ffffff;
+}
+
+.nav-header-arrows {
+    fill: #ffffff;
+}
+
+.no_click_arrow {
+    fill: #b3b3b3;
+}
+
+.nav-header-arrow {
+    fill: #ffffff;
+}
+
+.contacts_nav_icon {
+    fill: #000000;
+}
+
+
+/* Стиль для активної іконки в темній темі */
+.dark-mode .contacts_nav_menu .active-link .contacts_nav_icon {
+    fill: #ffffff !important; /* Яскравий білий колір для активної іконки */
+}
+
+/* Загальний стиль для меню в темній темі */
+.dark-mode .contacts_nav_menu .contacts_nav__menu {
+    color: #8d8d8d; /* Затушований колір для нефокусованих лінків */
+}
+
+.dark-mode .contacts_nav_menu .contacts_nav__menu:hover {
+    color: #ffffff !important; 
+}
+
+/* Загальний стиль для іконок в темній темі */
+.dark-mode .contacts_nav_icon {
+    fill: #8d8d8d; /* Затушований колір для нефокусованих іконок */
+}
+
+/* Стиль для іконок при наведенні */
+.dark-mode .contacts_nav_menu .contacts_nav__menu:hover .contacts_nav_icon {
+    fill: #ffffff !important; /* Білий колір для іконок при наведенні */
+}
+
+.dark-mode .focused_icon {
+    fill: #ffffff !important; /* Яскравий білий колір для активної іконки */
+}
+
+.dark-mode-contacts-paragraph {
+    color: #ffffff;
+}
+
+.dark-home-content {
+    background-color: #2a2b2b;
+}
+
+.dark-aside-header {
+    background-color: #2a2b2b;
+    color: #ffffff;
+}
+
+.dark-collapse-btn {
+    background-color: #1b1b1c;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.contacts_nav_icon {
+    margin-right: 15px;
+}
+
+.contacts_btn_aside {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    width: 190px;
+    height: 40px;
+    border: 2px solid #ababab;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 1s ease;
+}
+
+.contacts_btn_aside:hover {
+    background-color: #7148fc;
+    transition-duration: 1s;
+    transition-property: all;
+    border: none;
+    color: #fff;
+}
+
+.contacts_btn_aside:hover .contacts_arrow_back {
+    fill: #ffffff;
+    transition: 1s;
+}
+
+.contacts_aside_nav.collapsed {
+    max-width: 60px; 
+    padding: 15px 0;
+    transition: all 1s ease;
+}
+
+.contacts_aside_nav.collapsed .contacts_nav_menu {
+    width: 100%; 
+}
+
+.contacts_aside_nav.collapsed .contacts_aside_content .contacts_logo {
+    margin-right: 10px;
+}
+
+.contacts_aside_nav.collapsed .contacts_logo_text, 
+.contacts_aside_nav.collapsed .contacts_nav__menu span, 
+.contacts_aside_nav.collapsed .contacts_btn_aside {
+    display: none;
+    transition: all 1s ease;
+}
+
+.contacts_aside_nav.collapsed .contacts_nav_icon {
+    margin-right: 0; 
+    justify-content: center;
+    display: block;
+    transition: all 1s ease;
+}
+
+.contacts_aside_nav.collapsed .contacts_nav__menu {
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+#collapse_btn {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts_aside_nav.collapsed #collapse_btn {
+    width: 40px;
+    height: 40px;
+    background-color: #7148fc;
+    border: none;
+    fill: #ffffff;
+}
+
+.contacts_aside_nav.collapsed .contacts_btn_aside span {
+    display: none;
+}
+
+.contacts_aside_nav.collapsed .contacts_arrow_back {
+    margin: 0 auto;
+    transform: rotate(180deg);
+    transition: all 1s ease;
+    fill: #ffffff;
+}
+
+.contacts_arrow_back {
+    margin-left: 20px;
+}
+
+.contacts_header_nav {
+    width: 100%;
+    transition: all 1s ease;
+}
+
+.contacts_header {
+    width: 100%;
+    height: 64px;
+}
+
+.contacts_nav_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 160px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.contacts_nav_arrow {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.contacts_page_name {
+    color: #202c39;
+    font-weight: 500;
+}
+
+.contacts_search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -32px;
+}
+
+.contacts_search_icon {
+    position: absolute;
+    margin-right: 250px;
+}
+
+.contacts_search_bar {
+    width: 300px;
+    height: 40px;
+    padding-left: 44px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
+}
+
+.contacts_fast_nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    float: right;
+    width: 180px;
+    margin-top: -40px;
+    margin-right: 20px;
+}
+
+.contacts_nav__icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.contacts_bell_block {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacts_red_point {
+    width: 6px;
+    height: 6px;
+    background-color: #EB4034;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#contacts_user_circle {
+    width: 45px;
+    height: 45px;
+}
+
+.contacts_content {
+    max-width: 77%;
+    height: auto;
+    margin-top: 25px;
+    margin-left: 25px;
+    /* background-color: #7148fc; */
+}
+
+.contacts_paragraph_block {
+    width: 100%;
+    height: 54px;
+}
+
+.contacts_paragraph {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.contacts_search_container {
+    width: 97%;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding-left: 50px;
+    height: 50px;
+    margin-top: 16px;
+}
+
+.contacts_mainsearch_icon {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.contacts_line_search {
+    width: 2px;
+    height: 30px;
+    background-color: #ababab;
+    margin-right: 24px;
+}
+
+.contacts_sort_icon {
+    margin-right: 5px;
+}
+  
+.contacts_content_search[type="search"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: #f4f4f4;
+}
+  
+.contacts_filter {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    margin-right: 66px;
+    color: #606871;
+}
+
+.contacts_filter_option {
+    background-color: #eeeeee;
+}
+
+.contacts_search_underline {
+    max-width: 97%;
+    border: 1px solid #cccccc;
+    margin-top: 34px;
+    margin-bottom: 34px;
+}
+
+.contacts {
+    max-width: 97%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contacts_block {
+    width: 325px;
+    height: 94px;
+    border-radius: 12px;
+    border: 2px solid #cccccc;
+    margin-bottom: 30px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contacts_block:hover {
+    background-color: #f4f4f4;
+    border: none;
+}
+
+.contacts_block:hover .plus_contact_icon {
+    fill: #ffffff;
+    transition: 1s;
+}
+
+.contact_avatar {
+    width: 50px;
+    height: 50px;
+}
+
+.contact_main_text {
+    font-weight: 500;
+}
+
+.contact_phone_number {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #6f7081;
+}
+
+.contact_follow_arrow {
+    cursor: pointer;
+}
+
+.add_new_contact {
+    cursor: pointer;
+}
+
+.add_new_contact:hover {
+    background-color: #7148fc;
+    border: none;
+    color: #fff;
+    transition: all 0.8s ease;
+}
+
+.plus_contact_icon {
+    width: 30px;
+    height: 30px;
+}
+
+.contacts_aside_line {
+    width: 2px;
+    height: 778px;
+    background-color: #cccccc;
+    float: right;
+    margin-top: -27px;
+    
+}
+
+.contacts_events {
+    position: absolute;
+    width: 18%;
+    height: 778px;
+    margin-top: -27px;
+    padding-top: 5px;
+    right: 5px;
+    overflow-y: scroll;
+    max-height: 778px;  
+}
+
+.contacts_events::-webkit-scrollbar {
+    width: 0;
+}
+
+.events_blocks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 20px 20px 0;
+}
+
+.events_block {
+    width: 100%;
+    min-height: 180px;
+    border: 2px solid #cccccc;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding: 12px;
+}
+
+.event_main_text {
+    text-transform: uppercase;
+    color: #7148fc;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.event_subscription {
+    font-weight: 500;
+}
+
+.contact_name_span {
+    color: #7148fc;
+    cursor: pointer;
+}
+
+.nav_event_block {
+    margin-top: 40px;
+}
+
+.event_arrow_link {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.event_cross_sign {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.event_img {
+    float: right;
+    width: 90px;
+    height: 90px;
+    margin-top: -30px;
+}
+

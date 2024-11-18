@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskmate | Files</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/img/icons/logo.png">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="/css/files_page.css">
+</head>
+<body>
+    <section class="files_section">
+        <aside class="files_aside_nav">
+            <div class="files_aside_content">
+                <img onclick="window.location.href='/index.html'" class="files_logo" src="/img/icons/logo.png"
+                    alt="logo">
+                <span onclick="window.location.href='/index.html'" class="files_logo_text">taskmate</span>
+            </div>
+            <div class="files_nav_menu">
+                <a href="/home_page.html" class="files_nav__menu"><box-icon class="files_nav_icon" name='home'></box-icon><span>Home</span></a>
+                <a href="/contacts_page.html" class="files_nav__menu"><box-icon class="files_nav_icon" type='solid' name='contact'></box-icon><span>Contacts</span></a>
+                <a href="/notes_page.html" class="files_nav__menu"><box-icon class="files_nav_icon" name='notepad'></box-icon><span>Notes</span></a>
+                <a href="/files_page.html" class="files_nav__menu" id="focus_link"><box-icon class="files_nav_icon" name='file-blank' color='#000'></box-icon><span>Files</span></a>
+            </div>
+            <button class="files_btn_aside" id="collapse_btn">
+                <span class="files_btn_text">Collapse</span>
+                <box-icon class="files_arrow_back" name='arrow-back'></box-icon>
+            </button>
+        </aside>
+        <aside class="files_header_nav">
+            <header class="files_header">
+                <div class="files_nav_header">
+                    <box-icon onclick="window.location.href='/notes_page.html'" class="files_nav_arrow" name='chevron-left' color='#000'></box-icon>
+                    <box-icon class="files_nav_arrow files_no_clickarrow" name='chevron-right' color='#b3b3b3'></box-icon>
+                    <h3 class="files_page_name">Files</h3>
+                </div>
+                <div class="files_search">
+                    <box-icon class="files_search_icon" name='search' color='#494949'></box-icon>
+                    <input class="files_search_bar" type="search" placeholder="Search on Taskmate">
+                </div>
+                <div class="files_fast_nav">
+                    <box-icon onclick="window.location.href='#'" class="files_nav__icon" name='moon' color='#000'></box-icon>
+                    <div class="files_bell_block">
+                        <box-icon onclick="window.location.href='/notification_page.html'" class="files_nav__icon" name='bell' color='#000'></box-icon>
+                        <div class="files_red_point"></div>
+                    </div>
+                    <box-icon onclick="window.location.href='/cabinet_page.html'" class="files_nav__icon" id="files_user_circle" name='user-circle' type='solid' color='#7148fc'></box-icon>
+                </div>
+            </header>
+            <section class="files_content">
+                <div class="files_paragraph_block">
+                    <h1 class="files_paragraph">Files 📂</h1>
+                    <box-icon class="files_mainsearch_icon" name='search' color='#494949'></box-icon>
+
+                    <div class="files_search_divider">
+                        <div class="files_search_container">
+                            <input class="files_content_search" type="search" placeholder="Search...">
+                        </div>
+                        <div class="files_search_filter">
+                            <span class="filter_icon_span">
+                                <box-icon name='filter-alt' class="files_filter_icon"></box-icon>
+                            </span>
+                            <select class="files_select">
+                                <option class="files_filter_option" value="all">All types</option>
+                                <option class="files_filter_option" value="name">Documents</option>
+                                <option class="files_filter_option" value="date">Music</option>
+                                <option class="files_filter_option" value="priority">Picture</option>
+                                <option class="files_filter_option" value="priority">Video</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="files_container">
+                        <!-- Заголовок -->
+                        <div class="files_name_column">
+                            <span class="name_column">Title <box-icon class="files_arrow_down" name='down-arrow-alt' color='#4d4d4d' ></box-icon></span>
+                            <span class="name_column">Type <box-icon class="files_arrow_down" name='down-arrow-alt' color='#4d4d4d' ></box-icon></span>
+                            <span class="name_column files_date">Date <box-icon class="files_arrow_down" name='down-arrow-alt' color='#7148fc'></box-icon></span>
+                            <span class="name_column">Size <box-icon class="files_arrow_down" name='down-arrow-alt' color='#4d4d4d' ></box-icon></span>
+                        </div>
+                
+                        <!-- Елементи списку файлів -->
+                        <div class="files_scroll_container">
+                        <div class="files_content_elements">
+                            <div class="files_names_container">
+                                <img src="/img/icons/image.png" alt="image">
+                                <div class="files_names">
+                                    <span class="file_name_header">Photo_1</span>
+                                    <a class="files_full_name" href="#">IMG_1234567.jpg</a>
+                                </div>
+                            </div>
+                            <div class="files_name_prototype">IMAGE</div>
+                            <div class="files_date_prototype">18 Sep 2024</div>
+                            <div class="files_size_prototype">4.1mb</div>
+                            <box-icon class="files_dots_icon" name='dots-vertical-rounded'></box-icon>
+                        </div>
+                
+                        <div class="files_content_elements">
+                            <div class="files_names_container">
+                                <img src="/img/icons/video.png" alt="video">
+                                <div class="files_names">
+                                    <span class="file_name_header">Video_1</span>
+                                    <a class="files_full_name" href="#">VID_1234567.mp4</a>
+                                </div>
+                            </div>
+                            <div class="files_name_prototype">VIDEO</div>
+                            <div class="files_date_prototype">18 Sep 2024</div>
+                            <div class="files_size_prototype">24.6mb</div>
+                            <box-icon class="files_dots_icon" name='dots-vertical-rounded'></box-icon>
+                        </div>
+                
+                        <div class="files_content_elements">
+                            <div class="files_names_container">
+                                <img src="/img/icons/music.png" alt="audio">
+                                <div class="files_names">
+                                    <span class="file_name_header">Audio_1</span>
+                                    <a class="files_full_name" href="#">AUD_1234567.mp3</a>
+                                </div>
+                            </div>
+                            <div class="files_name_prototype">AUDIO</div>
+                            <div class="files_date_prototype">18 Sep 2024</div>
+                            <div class="files_size_prototype">256kb</div>
+                            <box-icon class="files_dots_icon" name='dots-vertical-rounded'></box-icon>
+                        </div>
+
+                        <div class="files_content_elements">
+                            <div class="files_names_container">
+                                <img src="/img/icons/document.png" alt="doc">
+                                <div class="files_names">
+                                    <span class="file_name_header">Document_1</span>
+                                    <a class="files_full_name" href="#">DOC_1234567.docx</a>
+                                </div>
+                            </div>
+                            <div class="files_name_prototype">DOC</div>
+                            <div class="files_date_prototype">18 Sep 2024</div>
+                            <div class="files_size_prototype">256kb</div>
+                            <box-icon class="files_dots_icon" name='dots-vertical-rounded'></box-icon>
+                        </div>
+
+                        <div class="files_content_elements">
+                            <div class="files_names_container">
+                                <img src="/img/icons/document.png" alt="doc">
+                                <div class="files_names">
+                                    <span class="file_name_header">Document_2</span>
+                                    <a class="files_full_name" href="#">DOC_1234568.docx</a>
+                                </div>
+                            </div>
+                            <div class="files_name_prototype">DOC</div>
+                            <div class="files_date_prototype">18 Sep 2024</div>
+                            <div class="files_size_prototype">820kb</div>
+                            <box-icon class="files_dots_icon" name='dots-vertical-rounded'></box-icon>
+                        </div>
+
+                        <div class="files_content_elements">
+                            <div class="files_names_container">
+                                <img src="/img/icons/document.png" alt="doc">
+                                <div class="files_names">
+                                    <span class="file_name_header">Document_3</span>
+                                    <a class="files_full_name" href="#">DOC_1234569.docx</a>
+                                </div>
+                            </div>
+                            <div class="files_name_prototype">DOC</div>
+                            <div class="files_date_prototype">18 Sep 2024</div>
+                            <div class="files_size_prototype">256kb</div>
+                            <box-icon class="files_dots_icon" name='dots-vertical-rounded'></box-icon>
+                        </div>
+
+                        <div class="files_content_elements">
+                            <div class="files_names_container">
+                                <img src="/img/icons/document.png" alt="doc">
+                                <div class="files_names">
+                                    <span class="file_name_header">Document_4</span>
+                                    <a class="files_full_name" href="#">DOC_1234570.docx</a>
+                                </div>
+                            </div>
+                            <div class="files_name_prototype">DOC</div>
+                            <div class="files_date_prototype">18 Sep 2024</div>
+                            <div class="files_size_prototype">256kb</div>
+                            <box-icon class="files_dots_icon" name='dots-vertical-rounded'></box-icon>
+                        </div>
+
+                        <div class="files_content_elements">
+                            <div class="files_names_container">
+                                <img src="/img/icons/document.png" alt="doc">
+                                <div class="files_names">
+                                    <span class="file_name_header">Document_5</span>
+                                    <a class="files_full_name" href="#">DOC_1234571.docx</a>
+                                </div>
+                            </div>
+                            <div class="files_name_prototype">DOC</div>
+                            <div class="files_date_prototype">18 Sep 2024</div>
+                            <div class="files_size_prototype">256kb</div>
+                            <box-icon class="files_dots_icon" name='dots-vertical-rounded'></box-icon>
+                        </div>
+
+                        <div class="files_content_elements">
+                            <div class="files_names_container">
+                                <img src="/img/icons/document.png" alt="doc">
+                                <div class="files_names">
+                                    <span class="file_name_header">Document_6</span>
+                                    <a class="files_full_name" href="#">DOC_1234572.docx</a>
+                                </div>
+                            </div>
+                            <div class="files_name_prototype">DOC</div>
+                            <div class="files_date_prototype">18 Sep 2024</div>
+                            <div class="files_size_prototype">256kb</div>
+                            <box-icon class="files_dots_icon" name='dots-vertical-rounded'></box-icon>
+                        </div>
+
+                        <div class="files_content_elements">
+                            <div class="files_names_container">
+                                <img src="/img/icons/document.png" alt="doc">
+                                <div class="files_names">
+                                    <span class="file_name_header">Document_7</span>
+                                    <a class="files_full_name" href="#">DOC_1234573.docx</a>
+                                </div>
+                            </div>
+                            <div class="files_name_prototype">DOC</div>
+                            <div class="files_date_prototype">18 Sep 2024</div>
+                            <div class="files_size_prototype">256kb</div>
+                            <box-icon class="files_dots_icon" name='dots-vertical-rounded'></box-icon>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+
+                <div class="files_aside_line"></div>
+
+                <aside class="files_carusel_aside">
+                    <section class="files_carusel_section">
+                        <h2 class="files_main_text_scrollmenu">Recent files</h2>
+                        <div class="files_scrollmenu_tags">
+                            <div class="files_tag"> <button href="#" class="files_btn_tag">All</button> </div>
+                            <div class="files_tag"> <button href="#" class="files_btn_tag">Docs</button> </div>
+                            <div class="files_tag"> <button href="#" class="files_btn_tag">Images</button> </div>
+                            <div class="files_tag"> <button href="#" class="files_btn_tag">Videos</button> </div>
+                            <div class="files_tag"> <button href="#" class="files_btn_tag">Audio</button> </div>
+                            <div class="files_tag"> <button href="#" class="files_btn_tag">By day</button> </div>
+                            <div class="files_tag"> <button href="#" class="files_btn_tag">By date</button> </div>
+                            <div class="files_tag"> <button href="#" class="files_btn_tag">By month</button> </div>
+                            <div class="files_tag"> <button href="#" class="files_btn_tag">By year</button> </div>
+                        </div>
+
+                        <div class="files_blocks_container">
+
+                            <span class="files_date_span">Today</span>
+
+                            <div class="files_block">
+                                <div class="files_maintext_container">
+                                    <img class="files_icon" src="/img/icons/image.png" alt="image">
+                                </div>
+                                <div class="files_subtitle_container">
+                                    <h3 class="files_name_header">Photo_1</h3>
+                                    <a class="files_detail_info" href="#">IMG_1234567.jpg</a>
+                                </div>
+                                <div class="files_container_info">
+                                    <span class="files_upload_date">Sep 18</span>
+                                    <span class="files_size">4.1mb</span>
+                                </div>
+                            </div>
+                            <div class="files_block">
+                                <div class="files_maintext_container">
+                                    <img class="files_icon" src="/img/icons/video.png" alt="video">
+                                </div>
+                                <div class="files_subtitle_container">
+                                    <h3 class="files_name_header">Video_1</h3>
+                                    <a class="files_detail_info" href="#">VID_1234567.mp4</a>
+                                </div>
+                                <div class="files_container_info">
+                                    <span class="files_upload_date">Sep 18</span>
+                                    <span class="files_size">4.1mb</span>
+                                </div>
+                            </div>
+                            <div class="files_block">
+                                <div class="files_maintext_container">
+                                    <img class="files_icon" src="/img/icons/music.png" alt="audio">
+                                </div>
+                                <div class="files_subtitle_container">
+                                    <h3 class="files_name_header">Audio_1</h3>
+                                    <a class="files_detail_info" href="#">AUD_1234567.mp3</a>
+                                </div>
+                                <div class="files_container_info">
+                                    <span class="files_upload_date">Sep 18</span>
+                                    <span class="files_size">4.1mb</span>
+                                </div>
+                            </div>
+                            <div class="files_block">
+                                <div class="files_maintext_container">
+                                    <img class="files_icon" src="/img/icons/document.png" alt="doc">
+                                </div>
+                                <div class="files_subtitle_container">
+                                    <h3 class="files_name_header">Document_1</h3>
+                                    <a class="files_detail_info" href="#">DOC_1234567.docx</a>
+                                </div>
+                                <div class="files_container_info">
+                                    <span class="files_upload_date">Sep 18</span>
+                                    <span class="files_size">4.1mb</span>
+                                </div>
+                            </div>
+
+                            <span class="files_date_span">Previous 7 days</span>
+
+                            <div class="files_block">
+                                <div class="files_maintext_container">
+                                    <img class="files_icon" src="/img/icons/image.png" alt="image">
+                                </div>
+                                <div class="files_subtitle_container">
+                                    <h3 class="files_name_header">Photo_2</h3>
+                                    <a class="files_detail_info" href="#">IMG_1234568.jpg</a>
+                                </div>
+                                <div class="files_container_info">
+                                    <span class="files_upload_date">Sep 17</span>
+                                    <span class="files_size">23.8mb</span>
+                                </div>
+                            </div>
+                            <div class="files_block">
+                                <div class="files_maintext_container">
+                                    <img class="files_icon" src="/img/icons/image.png" alt="image">
+                                </div>
+                                <div class="files_subtitle_container">
+                                    <h3 class="files_name_header">Photo_3</h3>
+                                    <a class="files_detail_info" href="#">IMG_1234569.jpg</a>
+                                </div>
+                                <div class="files_container_info">
+                                    <span class="files_upload_date">Sep 17</span>
+                                    <span class="files_size">24.0mb</span>
+                                </div>
+                            </div>
+                            <div class="files_block">
+                                <div class="files_maintext_container">
+                                    <img class="files_icon" src="/img/icons/image.png" alt="image">
+                                </div>
+                                <div class="files_subtitle_container">
+                                    <h3 class="files_name_header">Photo_4</h3>
+                                    <a class="files_detail_info" href="#">IMG_1234570.jpg</a>
+                                </div>
+                                <div class="files_container_info">
+                                    <span class="files_upload_date">Sep 17</span>
+                                    <span class="files_size">24.1mb</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </aside>
+
+            </section>
+        </aside>
+    </section>
+
+
+    <!-- js file link -->
+    <script src="/js/files_page.js"></script>
+</body>
+</html>
